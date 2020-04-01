@@ -12,6 +12,12 @@ Naming/BinaryOperatorParameterName:
   StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#other-arg
   Enabled: false
 
+Naming/BlockParameterName:
+  Description: >-
+              Checks for block parameter names that contain capital letters,
+              end in numbers, or do not meet a minimal length.
+  Enabled: false
+
 Naming/ClassAndModuleCamelCase:
   Description: Use CamelCase for classes and modules.
   StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#camelcase-classes
@@ -47,6 +53,12 @@ Naming/MethodName:
   - snake_case
   - camelCase
 
+Naming/MethodParameterName:
+  Description: >-
+              Checks for method parameter names that contain capital letters,
+              end in numbers, or do not meet a minimal length.
+  Enabled: false
+
 Naming/PredicateName:
   Description: Check the names of predicate methods.
   StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#bool-methods-qmark
@@ -55,22 +67,10 @@ Naming/PredicateName:
   - is_
   - has_
   - have_
-  NamePrefixBlacklist:
+  ForbiddenPrefixes:
   - is_
   - has_
   - have_
-
-Naming/UncommunicativeBlockParamName:
-  Description: >-
-              Checks for block parameter names that contain capital letters,
-              end in numbers, or do not meet a minimal length.
-  Enabled: false
-
-Naming/UncommunicativeMethodParamName:
-  Description: >-
-              Checks for method parameter names that contain capital letters,
-              end in numbers, or do not meet a minimal length.
-  Enabled: false
 
 Naming/VariableName:
   Description: Use the configured style when naming variables.

@@ -41,12 +41,12 @@ Lint/DeprecatedClassMethods:
 Lint/DuplicateCaseCondition:
   Enabled: false
 
-Lint/DuplicateMethods:
-  Description: Check for duplicate methods calls.
+Lint/DuplicateHashKey:
+  Description: Check for duplicate keys in hash literals.
   Enabled: true
 
-Lint/DuplicatedKey:
-  Description: Check for duplicate keys in hash literals.
+Lint/DuplicateMethods:
+  Description: Check for duplicate methods calls.
   Enabled: true
 
 Lint/EachWithObjectArgument:
@@ -92,11 +92,6 @@ Lint/FloatOutOfRange:
 Lint/FormatParameterMismatch:
   Description: The number of parameters to format/sprint must match the fields.
   Enabled: true
-
-Lint/HandleExceptions:
-  Description: Don't suppress exception.
-  StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#dont-hide-exceptions
-  Enabled: false
 
 Lint/ImplicitStringConcatenation:
   Description: Checks for adjacent string literals on the same line, which could better
@@ -144,7 +139,7 @@ Lint/MissingCopEnableDirective:
   Description: 'Checks for a `# rubocop:enable` after `# rubocop:disable`'
   Enabled: true
 
-Lint/MultipleCompare:
+Lint/MultipleComparison:
   Enabled: false
 
 Lint/NestedMethodDefinition:
@@ -205,6 +200,11 @@ Lint/RescueType:
 Lint/ReturnInVoidContext:
   Enabled: false
 
+Lint/SuppressedException:
+  Description: Don't suppress exception.
+  StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#dont-hide-exceptions
+  Enabled: false
+
 Lint/SafeNavigationChain:
   Enabled: false
 
@@ -229,12 +229,6 @@ Lint/ShadowingOuterLocalVariable:
     or block local variables.
   Enabled: true
 
-# Supports --auto-correct
-Lint/StringConversionInInterpolation:
-  Description: Checks for Object#to_s usage in string interpolation.
-  StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#no-to-s
-  Enabled: true
-
 Lint/UnderscorePrefixedVariableName:
   Description: Do not use prefix `_` for a variable that is used.
   Enabled: false
@@ -257,6 +251,12 @@ Lint/RedundantRequireStatement:
 
 Lint/RedundantSplatExpansion:
   Enabled: false
+
+# Supports --auto-correct
+Lint/RedundantStringCoercion:
+  Description: Checks for Object#to_s usage in string interpolation.
+  StyleGuide: https://github.com/rubocop-hq/ruby-style-guide#no-to-s
+  Enabled: true
 
 Lint/UnreachableCode:
   Description: Unreachable code.
