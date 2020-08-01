@@ -3,6 +3,6 @@
 module RuboCop
   module Moaform
     # Version information for the the Moaform RuboCop plugin.
-    VERSION = '3.0.2'
+    VERSION = '1.0.0'
   end
 end
