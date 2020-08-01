@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":756,"end_pos":756},"message":"Layout/IndentationWidth: Use 2 (not 0) spaces for indented_internal_methods indentation.","cop_name":"Layout/IndentationWidth","status":"uncorrected"}]

@@ -7,9 +7,11 @@ rdoc
 
 # bundler
 /rubocop-airbnb/.bundle
+/rubocop-moaform/.bundle
 .bundle
 .config
 /rubocop-airbnb/vendor/bundle
+/rubocop-moaform/vendor/bundle
 Gemfile.lock
 
 # rbenv
@@ -25,4 +27,7 @@ TAGS
 # logfiles and tempfiles.
 /rubocop-airbnb/log/*.log
 /rubocop-airbnb/tmp
+/rubocop-moaform/log/*.log
+/rubocop-moaform/tmp
+.
 .byebug_history

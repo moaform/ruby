@@ -1,10 +1,10 @@
 # Ruby Style Guide
 
-This is Airbnb's Ruby Style Guide.
+This is Moaform's Ruby Style Guide.
 
 It was inspired by [GitHub's guide](https://web.archive.org/web/20160410033955/https://github.com/styleguide/ruby) and [Rubocop guide][rubocop-guide].
 
-Airbnb also maintains a [JavaScript Style Guide][airbnb-javascript].
+Moaform also maintains a [JavaScript Style Guide][airbnb-javascript].
 
 ## Table of Contents
   1. [Whitespace](#whitespace)

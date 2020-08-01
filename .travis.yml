@@ -3,12 +3,10 @@ cache:
   bundler: true
 sudo: false
 rvm:
-  - 2.3
-  - 2.4
   - 2.5
   - 2.6
 install:
-  - cd rubocop-airbnb
+  - cd rubocop-moaform
   - bundle install
 script:
   - bundle exec rspec
